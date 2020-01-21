@@ -3,6 +3,7 @@ package aplicacao;
 
 import java.util.Locale;
 import java.util.Scanner;
+import java.util.Date;
 
 import entidades.Produto;
 
@@ -17,8 +18,13 @@ public class Programa {
 		System.out.print("Digite o numero de produtos:");
 		int qtProduto = sc.nextInt();
 		
+		
 		for(int i = 0 ; i < qtProduto; i++) 
 		{
+			
+			System.out.print("Selecione a categoria do produto [C]-[U]-[i]");
+			char opcao = sc.next().charAt(0);	
+			
 			System.out.printf("Digite o #" + i);
 			System.out.println();
 			
@@ -29,6 +35,17 @@ public class Programa {
 			
 			System.out.println("Digite Preço:");
 			double preco = sc.nextDouble();
+			switch(opcao)
+			{
+				case 'u':
+					Date data = new Date();
+					
+					System.out.print("Data de compra:");
+					data = 
+					
+					break;
+			}
+			
 			
 			Produto produto = new Produto();
 		}
