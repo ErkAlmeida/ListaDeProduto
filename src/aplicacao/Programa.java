@@ -19,11 +19,13 @@ public class Programa {
 		int qtProduto = sc.nextInt();
 		
 		
+		
 		for(int i = 0 ; i < qtProduto; i++) 
 		{
-			
-			System.out.print("Selecione a categoria do produto [C]-[U]-[i]");
-			char opcao = sc.next().charAt(0);	
+							
+			//Seleçao do tipo de produto
+			System.out.println("Selecione a categoria do produto [C]-[U]-[i]");
+			char opcao = sc.next().charAt(0);
 			
 			System.out.printf("Digite o #" + i);
 			System.out.println();
@@ -35,19 +37,31 @@ public class Programa {
 			
 			System.out.println("Digite Preço:");
 			double preco = sc.nextDouble();
+			
 			switch(opcao)
 			{
+				
+				case 'i':
+							
+					System.out.print("Custo de importação:");
+									
+				break;
+
 				case 'u':
 					Date data = new Date();
 					
 					System.out.print("Data de compra:");
-					data = 
+									
+				break;
+				
+				default: 
 					
-					break;
+					
+				break;	
 			}
 			
-			
 			Produto produto = new Produto();
+			
 		}
 		
 		sc.close();
