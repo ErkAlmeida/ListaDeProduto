@@ -6,7 +6,8 @@ public class ProdutoImportado extends Produto
 	
 	public ProdutoImportado() 
 	{
-			}
+		super();
+	}
 
 	public ProdutoImportado(String nome, Double preco, Double taxaImportacao) 
 	{
@@ -23,5 +24,14 @@ public class ProdutoImportado extends Produto
 	}
 	
 	
-	
+	public Double precoTotal() 
+	{
+		return preco + taxaImportacao;
+	}
+
+	@Override
+	public String toString() 
+	{
+		return nome +" (Usado) $"+preco+" (Taxa de importação $"+ taxaImportacao +")";
+	}
 }

@@ -52,26 +52,6 @@ public class Programa {
 			
 			//Selecionando a opção de produto
 			
-			switch(opcao)
-			{
-				case 'i':
-							
-					System.out.print("Custo de importação:");
-					double taxa = sc.nextDouble();
-					
-				break;
-
-				case 'u':
-					Date data = new Date();
-					
-					System.out.print("Data de compra:");
-					
-				break;
-				
-				default: 
-									
-				break;	
-			}
 			
 			listProduto.add(new Produto(nome,preco));
 			
