@@ -42,7 +42,7 @@ public class Produto
 	@Override
 	public String toString() 
 	{
-		return nome +" (Usado) $"+ preco;
+		return nome +" $"+ preco;
 	}
 }
 	

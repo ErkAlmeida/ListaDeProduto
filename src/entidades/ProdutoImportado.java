@@ -32,6 +32,6 @@ public class ProdutoImportado extends Produto
 	@Override
 	public String toString() 
 	{
-		return nome +" (Usado) $"+preco+" (Taxa de importação $"+ taxaImportacao +")";
+		return nome +" $"+precoTotal()+" (Taxa de importação $"+ taxaImportacao +")";
 	}
 }
